@@ -26,8 +26,8 @@ minimumBid = [55, 60, 20, 0, 4, 0, 99, 0];
 
 var numberOfItems = items.length
 // Array of end times (YYYY-[0-11]-[1-31]-[0-23]-[0-59]-[0-59])
-var endDate1 = new Date(2020, 8, 27, 21, 29);
-var endDate2 = new Date(2020, 8, 28, 21, 29);
+var endDate1 = new Date(2022, 8, 27, 21, 29);
+var endDate2 = new Date(2022, 8, 28, 21, 29);
 console.log("Auctions will end:\n" + endDate1 + "\n" + endDate2);
 var endTime1 = endDate1.getTime() / 1000;
 var endTime2 = endDate2.getTime() / 1000;
