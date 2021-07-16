@@ -24,7 +24,7 @@ function openLogin(event) {
   loggedIn = auth.currentUser && auth.currentUser.displayName
   if (!loggedIn) {
     if (event) event.preventDefault();
-    fabSignupForm.addClass('active');
+    fabLoginForm.addClass('active');
     overlay.addClass('dark-overlay');
   } else {
     console.log("Already logged in")

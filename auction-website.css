@@ -121,7 +121,7 @@ h5 {
   transition: all 600ms cubic-bezier(0.200, 0.965, 0.000, 1.005);
 }
 
-.fab.signup-form, .fab.info-page, .fab.bid-form {
+.fab.signup-form, .fab.login-form, .fab.info-page, .fab.bid-form {
   z-index: 5;
   cursor: pointer;
   border-radius: 50%;
@@ -202,7 +202,7 @@ h5 {
   background: #fc86a8;
 }
 
-.fab.signup-form #fab-hdr h3, .fab.info-page #fab-hdr-info h3 {
+.fab.signup-form #fab-hdr h3, .fab.login-form #fab-hdr h3, .fab.info-page #fab-hdr-info h3 {
   padding-right: 30px;
   padding-left: 30px;
 }

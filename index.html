@@ -107,6 +107,42 @@
 
           </form>
         </div>
+        <!-- Login Form-->
+        <div class="fab login-form">
+          <form class='cntt-wrapper'>
+            <div id="fab-hdr">
+              <h3>Login</h3>
+            </div>
+
+            <div class="cntt">
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" id="full-name">
+                <input class="mdl-textfield__input" type="text" id="text1" onkeypress="return newUserLogin(event)" autofocus />
+                <label class="mdl-textfield__label" for="text2">Username</label>
+                <span class="mdl-textfield__error">Please enter name!</span>
+
+              </div>
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" id="table-number-box">
+                <select class="mdl-textfield__input" id="table-number" name="table-number">
+                  <option></option>
+                  <option value="1">Table 1</option>
+                  <option value="2">Table 2</option>
+                  <option value="3">Table 3</option>
+                  <option value="4">Table 4</option>
+                  <option value="5">Table 5</option>
+                </select>
+                <label class="mdl-textfield__label" for="table-number">Table Number...</label>
+                <span class="mdl-textfield__error">Please select table!</span>
+              </div>
+            </div>
+
+            <div class="btn-wrapper">
+              <button class="mdl-button mdl-js-button" id="cancel" onclick="closeFAB(event);">Cancel</button>
+              <button class="mdl-button mdl-js-button mdl-button--primary" id="submit" onclick="return newUserLogin(event);">Submit</button>
+
+            </div>
+
+          </form>
+        </div>
         <!-- Info page -->
         <div class="fab info-page">
           <form class='cntt-wrapper'>
