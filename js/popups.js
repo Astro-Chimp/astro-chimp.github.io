@@ -2,6 +2,8 @@
 var overlay = $("#overlay"),
   fabLogin = $(".fab.login-button"),
   fabLoginForm = $(".fab.login-form"),
+  fabSignup = $(".fab.signup-button"),
+  fabSignupForm = $(".fab.signup-form"),
   fabBid = $(".fab.bid-button"),
   fabInfo = $(".fab.info-button"),
   fabBidForm = $(".fab.bid-form"),
@@ -13,6 +15,7 @@ extraImages = [0, 1, 5, 6, 7];
 
 //fab click
 fabLogin.on('click', openLogin);
+fabSignup.on('click', openSignup);
 overlay.on('click', closeFAB);
 cancel.on('click', closeFAB);
 
@@ -21,7 +24,19 @@ function openLogin(event) {
   loggedIn = auth.currentUser && auth.currentUser.displayName
   if (!loggedIn) {
     if (event) event.preventDefault();
-    fabLoginForm.addClass('active');
+    fabSignupForm.addClass('active');
+    overlay.addClass('dark-overlay');
+  } else {
+    console.log("Already logged in")
+  }
+}
+
+function openSignup(event) {
+  console.log("Signup popup")
+  loggedIn = auth.currentUser && auth.currentUser.displayName
+  if (!loggedIn) {
+    if (event) event.preventDefault();
+    fabSignupForm.addClass('active');
     overlay.addClass('dark-overlay');
   } else {
     console.log("Already logged in")
@@ -70,6 +85,7 @@ function closeFAB(event) {
   }
 
   fabLoginForm.removeClass('active');
+  fabSignupForm.removeClass('active');
   fabInfoPage.removeClass('active');
   fabBidForm.removeClass('active');
   fabBidForm.removeClass(function(index, className) {

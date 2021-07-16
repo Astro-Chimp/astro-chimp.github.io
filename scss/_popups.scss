@@ -11,7 +11,7 @@
 }
 
 .fab {
-  &.login-form, &.info-page, &.bid-form {
+  &.signup-form, &.info-page, &.bid-form {
     z-index: 5;
     cursor: pointer;
     border-radius: 50%;
@@ -94,7 +94,7 @@
 }
 
 .fab {
-  &.login-form #fab-hdr h3, &.info-page #fab-hdr-info h3 {
+  &.signup-form #fab-hdr h3, &.info-page #fab-hdr-info h3 {
     padding-right: 30px;
     padding-left: 30px;
   }

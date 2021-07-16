@@ -59,17 +59,20 @@
     <div class="mdl-layout__drawer">
       <span class="mdl-layout-title" id="login-indicator1">You must log in to bid </span>
       <nav class="mdl-navigation">
-        <div class="fab login-button">
+        <div class="fab signup-button">
           <a class="mdl-navigation__link mdl-layout--large-screen-only" onclick="document.querySelector('.mdl-layout').MaterialLayout.toggleDrawer();">Sign up</a>
+        </div>
+        <div class="fab login-button">
+          <a class="mdl-navigation__link mdl-layout--large-screen-only" onclick="document.querySelector('.mdl-layout').MaterialLayout.toggleDrawer();">Login</a>
         </div>
       </nav>
     </div>
     <main class="mdl-layout__content">
       <!-- This is where the website content goes -->
       <div class="page-content">
-        <!-- Login form -->
+        <!-- Signup form -->
         <div id="overlay"></div>
-        <div class="fab login-form">
+        <div class="fab signup-form">
           <form class='cntt-wrapper'>
             <div id="fab-hdr">
               <h3>Sign up</h3>

@@ -54,7 +54,7 @@ function newUserLogin(event) {
       table: table,
       admin: "false"
     })
-    console.log("Database wwrite from newUserLogin()")
+    console.log("Database write from newUserLogin()")
     closeFAB(event);
     console.log("User name added: " + name + " (" + user.uid + ")")
   }
@@ -64,6 +64,6 @@ function insertName(name) {
   firstName = name.replace(/ .*/, '');
   loginIndicator = $("#login-indicator1")[0]
   loginIndicator.innerHTML = "Hi " + firstName;
-  btnSignIn = $(".login-button .mdl-navigation__link")[0]
+  btnSignIn = $(".signup-button .mdl-navigation__link")[0]
   btnSignIn.style.display = "none"
 }
